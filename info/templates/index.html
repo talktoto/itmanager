@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>{{title}}</title>
+</head>
+<body>
+<h1>{{user.name}}</hi>
+<li>{{user.say}}<li>
+<li>{{ip.0}}</li>
+<li>{{ip.1}}</li>
+<li>{{ip}}</li>
+
+{% if user %}
+{{user.name}}
+{%else%}
+sss
+{%endif%}
+
+{% for i in user %}
+<li>{{i}}</li>
+{% endfor %}
+
+</body>
+</html>
